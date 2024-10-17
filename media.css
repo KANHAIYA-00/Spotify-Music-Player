@@ -1,0 +1,121 @@
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #1f1f1f;
+}
+::-webkit-scrollbar-thumb {
+    background: #3e3e3e;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #4a4a4a;
+}
+/* Change scrollbar to dark in Firefox */
+html {
+    scrollbar-color: #2c2c2c #181818;
+    scrollbar-width: thin;
+}
+.flex {
+    display: flex;
+}
+.invert {
+    filter: invert();
+}
+@media (max-width: 1400px) {
+    header .link ,.link2{
+        margin-right: 500px;
+    }
+    .playbar {
+        margin-left: 375px;
+    }
+    .playbar:hover .range {
+        width: 8vw;
+    }
+    .time{
+        width: 22vw;
+    } 
+    .heading p{
+        font-size: 50px;
+    }      
+}
+@media (max-width: 1100px) {
+    header .link ,.link2{
+        margin-right: 450px;
+    }
+    .heading p{
+        font-size: 30px;
+    }
+    .right2 {
+        height: 81vh;
+    }
+    .playbar {
+        margin-left: 305px;
+    }
+    .albums{
+        gap: 50px;
+    }
+    .card{
+        height: 40vh;
+        width: 14vw;
+    }
+    .card img.cover {
+       width: 12vw;
+    }
+    .card h3{
+        width: 12vw;
+        font-size: 80%;
+    }
+    .card p{
+        width: 12vw;
+        font-size: smaller;
+    }
+    .card2{
+        height: 10vh;
+        width: 24vw;
+    }
+    .card2 img{
+        width: 7vh;
+        height: 7vh;
+    }
+    .song2 .songname{
+        font-size: small;
+    }
+    .playbar{
+        margin-top: -72px;
+    }
+    .songs .li .photo {
+        height: 30px;
+        width: 30px;
+    }
+}
+@media (max-width: 990px) {
+    header .link ,.link2{
+        margin-right: 200px;
+    }
+    .box1 img {
+        width: 200px;
+        height: 200px;
+    }
+    .button {
+        height: 5vh;
+        width: 12vw;
+        font-size: 12px;
+    }  
+    .b2 {
+        width: 10vw;
+    }
+    .playbar .mus{
+        height: 40px;
+        width: 40px;
+    }
+}
+@media (min-width: 2120px) {
+    .albums {
+        justify-content:
+            space-around;
+    }
+    header .link {
+        margin-right: 1145px;
+    }
+} 

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify-Music Player</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="left flex">
+        <div class="logo flex">
+          <ul>
+            <li><img class="invert" src="svgs/logo.svg" alt="logo" /></li>
+            <li>
+              <img class="invert" src="svgs/home.svg" alt="home" />
+              <p id="home">Home</p>
+            </li>
+            <li>
+              <img class="invert" src="svgs/search.svg" alt="search" />
+              <p>Search</p>
+            </li>
+          </ul>
+        </div>
+        <div class="playlist">
+          <div class="nav flex">
+            <div class="L flex">
+              <img class="invert" src="svgs/library.svg" alt="library" />
+              <span class="lib">
+                <p>Your Library</p>
+              </span>
+            </div>
+            <div class="plus invert flex">
+              <img id="plus" src="svgs/plus.svg" alt="plus" />
+            </div>
+          </div>
+          <div class="flex">
+            <div class="main flex"></div>
+            <div class="main2 flex">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right1">
+        <header class="flex">
+          <div class="link flex">
+            <span class="flex"
+              ><img class="invert" src="svgs/pev.svg" alt=""
+            /></span>
+            <span class="flex"
+              ><img class="invert" src="svgs/next.svg" alt=""
+            /></span>
+          </div>
+          <div class="button b1 flex">Sign up</div>
+          <div class="button flex">
+            <div class="b2 flex">Log in</div>
+          </div>
+        </header>
+        <div class="text"><p>Spotify Playlists</p></div>
+        <div class="albums"></div>
+      </div>
+      <div class="right2">
+        <div class="background">
+          <header class="flex">
+            <div class="link2 flex">
+              <span class="flex"
+                ><img class="invert" src="svgs/pev.svg" alt=""
+              /></span>
+              <span class="flex"
+                ><img class="invert" src="svgs/next.svg" alt=""
+              /></span>
+            </div>
+            <div class="button b1 flex">Sign up</div>
+            <div class="button flex">
+              <div class="b2 flex">Log in</div>
+            </div>
+          </header>
+          <div class="top">
+          </div>
+          <div class="like flex">
+            <div class="bn">
+              <span class="playbutton1 flex">
+                <div class="play-button1"></div>
+              </span>
+            </div>
+            <div class="in">
+              <img src="svgs/like.svg" alt="" />
+            </div>
+            <div class="in">
+              <img id="auto" src="svgs/auto2.svg" alt="">
+            </div>
+            <div class="in">
+              <img id="shuffle" src="svgs/shuffle.svg" alt="">
+            </div>
+            <div class="in">
+              <img #id="more" src="svgs/dot.svg" alt="" />  
+            </div>
+          </div>
+          <div class="title flex">
+            <div class="flex">Title</div>
+          </div>
+        </div>
+        <div class="songs flex">
+        </div>
+      </div>
+    </div>
+    <div class="playbar flex">
+          <img class="mus" src="svgs/music.svg" alt="photo">
+          <div class="bar flex">
+            <div class="music flex">
+              <div class="name flex"></div>
+                <img class="previous" src="svgs/previousong.svg"></img>
+                <img class="playb" src="svgs/play.svg"></img>
+                <img class="next" src="svgs/nextsong.svg"></img>
+                <div class="time flex">00:00 / 00:00</div>
+                <img class="volume invert" src="svgs/volume.svg">
+                <input class="range flex" type="range">
+            </div>
+            <div class="seekbar flex">
+              <div class="seek flex"><span class="circle"></span></div>
+            </div>
+          </div>
+        </div>
+    <script src="script.js"></script>
+  </body>
+</html>

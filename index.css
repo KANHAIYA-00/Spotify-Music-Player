@@ -1,0 +1,573 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif), sans-serif;
+}
+body{
+    background-color:rgb(0, 0, 0);
+}
+.left,.right1,.right2{
+    border-radius: 10px;
+}
+.left{
+    height: 98vh;
+    width: 28vw;
+    margin: 8px;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.right1{
+    overflow: hidden;
+    height: 98vh;
+    width: 72vw;
+    margin-top: 8px;
+    background-color: #121212;
+}
+.right2 {
+    overflow-y: scroll;
+    padding-bottom: 100px;
+    height: 85vh;
+    width: 0vw;
+    margin: 8px;
+    margin-left: 0%;
+    background-color: #121212;
+}
+.background{
+    background-image: linear-gradient(#f15e6c, #121212 100%, #121212 100%);
+}
+.top{
+    height: 35vh;
+    width: 68.5vw;
+}
+.box1 {
+    color: white;
+    height: 35vh;
+    width: 68.5vw;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.box1 img {
+    border-radius: 6px;
+    width: 225px;
+    height: 225px;
+    cursor: pointer;
+    box-shadow: 5px 5px 14px -3px black
+}
+.heading p {
+    height: 15vh;
+    font-size: 75px;
+    text-wrap: wrap;
+    font-weight: bolder;
+}
+.heading h4 {
+    opacity: 0.8;
+}
+.heading {
+    flex-direction: column;
+    justify-content: end;
+    gap: 8px;
+    height: 28vh;
+    width: 50vw;
+    cursor: pointer;
+}
+
+span.playbutton1 {
+    margin-left: 20px;
+    height: 55px;
+    width: 55px;
+    background-color: #1ed760;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.play-button1 {
+    position: relative;
+}
+.play-button1::after {
+    margin: -9px -6px;
+    content: "";
+    position: absolute;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 16px solid black;
+}
+span.playbutton1:hover {
+    height: 58px;
+    width: 58px;
+}
+.bn{
+    height: 60px;
+    width: 70px;
+}
+.like {
+    align-items: center;
+    gap: 50px;
+    height: 15vh;
+    width: 68.5vw;
+}
+.like .in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+}
+.like img {
+    opacity: 0.7;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+.like img:hover {
+    opacity: 1;
+    height: 40px;
+    width: 40px;
+}
+.title {
+    opacity: 0.6;
+    height: 4vh;
+    width: 68.5vw;
+    align-items: center;
+    gap: 600px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.title div {
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    height: 4vh;
+    width: 19.5vw;
+}
+.title img {
+    height: 20px;
+    width: 20px;
+}
+.songs {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.songs .li {
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 68vw;
+    height: 8vh;
+    border-radius: 6px;
+}
+.songs .song:hover .li{
+    background-color: #3a3a3a;
+}
+.songs .li .photo {
+    height: 45px;
+    width: 45px;
+    border-radius: 6px;
+    border: 2px solid wheat;
+}
+.songs .li .songname {
+    color: white;
+    width: 60vw;
+    height: 6vh;
+}
+.logo{
+    height: 18vh;
+    width: 26vw;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    padding-left: 25px;
+    padding-top: 20px;
+    background-color: #121212;
+}
+.playlist{
+    width: 26vw;
+    border-radius: 10px;
+    padding-left: 25px;
+    background-color: #121212;
+    height: 76vh;
+}
+li{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+li p:hover{
+    text-decoration: underline;
+}
+header{
+    background-color: rgba(0, 0, 0, .5);
+    height: 8vh;
+    position: sticky;
+    top: 0;
+    margin: 0px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.button{
+    height: 6vh;
+    width: 9vw;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.b1{
+    color: white;
+    background: none;
+    opacity: 0.6;
+}
+.b2{
+    height: 5.5vh;
+    width: 6.5vw;
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.b1:hover{
+    opacity: 1;
+    font-weight:bold;
+}
+.b2:hover {
+    padding: 3px;
+    font-weight: bold;
+}
+.nav {
+    height: 60px;
+    position: sticky;
+}
+.nav div.L{
+    width: 150px;
+    gap: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+    align-items: center;
+}
+.nav div img{
+    height: 24px;
+    width: 24px;
+}
+.nav div p{
+    color: white;
+    font-size: 18px;
+    height: 20px;
+    width: 100px;
+}
+.nav div:hover{
+    opacity: 1;
+    transition: ease-in-out 0.2s;
+}
+.plus{
+    justify-content: end;
+    align-items: center;
+    width: 230px; 
+}
+.plus img{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.plus img:hover{
+    opacity: 1;
+    transition: ease-in-out 0.2s;
+}
+div.text{
+    font-size: 200%;
+    color: white;
+    padding-left: 10px;
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+}
+div.text p:hover{
+    text-decoration: underline;
+}
+.albums{
+    height: 69vh;
+    margin-bottom: 10px;
+    padding: 16px 16px 24px 30px;
+    display: flex;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+.card{
+    background: #181818;
+    height: 35vh;
+    width: 12vw;
+    gap: 5px;
+    border-radius: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card img.cover{
+    width: 10vw;
+    height: 20vh;
+    border-radius: 8px;
+    box-shadow: 5px 5px 14px -3px black
+}
+.card h3{
+    font-weight: bold;
+    font-size: 100%;
+    color: white;
+    height: 5vh;
+    width: 10vw;
+    text-wrap: wrap;
+}
+.card p{
+    color: white;
+    opacity: 0.5;
+    height: 5vh;
+    width: 10vw;
+    font-size: small;
+    text-wrap: wrap;
+}
+.card2{
+    background: #181818;
+    height: 10vh;
+    width: 24vw;
+    border-radius: 8px;
+    align-items: center;
+    gap: 8px;
+    padding-left: 4px;
+    color: #ffffff;
+}
+.card2 img{
+    width: 9vh;
+    height: 9vh;
+    padding: 2px;
+    border-radius: 8px;
+}
+.song2 .songname{
+    width: 20vw;  
+}
+.song2:hover .card2 {
+    background: #282828;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+.hv:hover .card2 {
+    background: #282828;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+span.playbutton{
+    position: relative;
+    margin-top: -95px;
+    margin-left: 115px;
+    height: 0px;
+    width: 0px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.play-button {
+    position: relative;
+}
+.play-button::after {
+    margin: -9px -6px;
+    content: "";
+    position: absolute;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 0px solid transparent;
+}
+.hov{
+    height: 35vh;
+    width: 12vw;
+}
+.hov:hover .playbutton{
+    height: 49px;
+    width: 49px;
+    margin-top: -155px;
+    background-color: #1ed760;
+    transition: ease-in-out 0.4s;
+}
+.hov:hover .play-button::after{
+    margin: -9px -6px;
+    content: "";
+    position: absolute;
+    border-top: 9px solid transparent; 
+    border-bottom: 9px solid transparent;
+    border-left: 16px solid black;
+    transition: ease-in-out 0.3s;
+}
+.hov:hover .card{
+    background: #282828;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+.main{
+    overflow-y: scroll;
+    height: 44vh;
+    width: 0vw;
+    align-items: center;
+    gap: 8px;
+    flex-direction: column;
+    cursor: pointer;
+}
+.main2{
+    overflow-y: scroll;
+    height: 44vh;
+    width: 26vw;
+    gap: 8px;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    color: white;
+}
+.main2 img{
+    height: 55px;
+    width: 55px;
+    border-radius: 8px;
+    border: 2px solid wheat;
+}
+.box{
+    height: 8vh;
+    width: 21vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playbar{
+    overflow: hidden;
+    margin-left: 441px;
+    margin-top: -89px;
+    position:relative;
+    width: 0vw;
+    height: 11vh;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: #242424
+}
+.music{
+    height: 6vh;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.seekbar{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 3vh;
+    width: 50vw;
+    cursor: pointer;
+}
+.seekbar div{
+    align-items: center;
+    justify-content: start;
+    border-radius: 10px;
+    height: 6px;
+    width: 50vw;
+    background-color: white;
+}
+.seekbar div span{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    margin-left: -0.5%;
+    border-radius: 100%;
+    background-color: white
+}
+.music div{
+    color: white;
+    height: 6vh;
+}
+.bar{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.playbar .mus{
+    height: 60px;
+    width: 60px;
+    margin-left: 5px;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+.volume{
+    height: 40px;
+    width: 40px;
+}
+.name{
+    align-items: center;
+    width: 25vw;
+}
+.previous{
+    width: 2vw;
+}
+.playb{
+    width: 2vw;
+    margin-left: 1.5px;
+}
+.next{
+    width: 2vw;
+}
+.time{
+    justify-content: end;
+    align-items: center;
+    width: 26vw;
+}
+.range{
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 0vw;
+}
+.playbar:hover .range{
+    width: 12vw;
+    transition: ease-in-out 0.5s;
+}
+.playbar:hover .time{
+    width: 14vw;
+    transition: ease-in-out 0.5s;
+}
+header{
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+}
+header span img{
+    height: 20px;
+    width: 20px;
+}
+header span{
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color:#1f1f1f;
+    height: 30px;
+    width: 30px;
+}
+header .link,.link2{
+    justify-content: center;
+    align-items: center;
+    margin-right: 650px;
+    margin-left: 10px;
+    gap: 10px;
+}
